@@ -1,0 +1,23 @@
+.nav {
+    height: 100%;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  height: 100%;
+}
+
+.nav__item {
+  width: 162px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav__item:first-child {
+  border-top: 3px solid var(--color-highlight-primary);
+  color: var(--color-highlight-primary);
+}

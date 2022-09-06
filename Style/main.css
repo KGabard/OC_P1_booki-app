@@ -1,0 +1,18 @@
+@import url(Base/normalize.css);
+@import url(Base/base.css);
+
+@import url(Components/navigation.css);
+@import url(Components/logo.css);
+@import url(Components/form.css);
+@import url(Components/filter.css);
+@import url(Components/housing-card.css);
+@import url(Components/activity-card.css);
+
+@import url(Layouts/header.css);
+@import url(Layouts/search-section.css);
+@import url(Layouts/filters-section.css);
+@import url(Layouts/info-section.css);
+@import url(Layouts/housings-sections-container.css);
+@import url(Layouts/housings-section.css);
+@import url(Layouts/popular-section.css);
+@import url(Layouts/activities-section.css);

@@ -1,0 +1,12 @@
+.filtersSection {
+  display: flex;
+  height: 72px;
+  align-items: center;
+  gap: 32px;
+  margin: 0 var(--margin-sides-desktop) 16px;
+}
+
+.filtersSection__filtersList {
+  display: flex;
+  gap: 24px;
+}

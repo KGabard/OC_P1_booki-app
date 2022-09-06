@@ -1,0 +1,29 @@
+.activityCard {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.activityCard__link {
+  color: black;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.activityCard__picture {
+  object-fit: cover;
+  width: 100%;
+  height: 0;
+  flex: 1 1 0px;
+  border-radius: 16px 16px 0 0;
+}
+
+.activityCard__info {
+  padding: 16px;
+}

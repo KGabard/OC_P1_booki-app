@@ -1,0 +1,121 @@
+.housingCard {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.housingCard.housingCard--vertical {
+  height: 200px;
+  flex-direction: column;
+}
+
+.housingCard.housingCard--horizontal {
+  height: 100%;
+}
+
+.housingCard__link {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.housingCard__link.housingCard--vertical {
+  width: 92%;
+}
+
+.housingCard__link.housingCard--horizontal {
+  height: 0;
+  flex-grow: 1;
+}
+
+.housingCard__container:nth-of-type(3n-2) > .housingCard__link {
+  margin-right: auto;
+}
+
+.housingCard__container:nth-of-type(3n) > .housingCard__link {
+  margin-left: auto;
+}
+
+.housingCard__container {
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.housingCard__picture {
+  object-fit: cover;
+}
+
+.housingCard--vertical .housingCard__picture {
+  height: 112px;
+  border-radius: 16px 16px 0 0;
+  padding: 4px 4px 0 4px;
+}
+
+.housingCard--horizontal .housingCard__picture {
+  width: 38%;
+  padding: 4px 0 4px 4px;
+  border-radius: 16px 0 0 16px;
+}
+
+.housingCard__info {
+  flex: 1 1 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 16px;
+}
+
+.housingCard--vertical .housingCard__info {
+  height: 0;
+  justify-content: space-between;
+  padding: 8px 16px;
+}
+
+.housingCard--horizontal .housingCard__info {
+  width: 0;
+  padding: 16px 16px 12px;
+}
+
+.housingCard__title {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.housingCard--vertical .housingCard__title {
+  -webkit-line-clamp: 1;
+}
+
+.housingCard--horizontal .housingCard__title {
+  -webkit-line-clamp: 3;
+}
+
+.housingCard__notation {
+  margin-top: 2px;
+  display: flex;
+}
+
+.housingCard--vertical .housingCard__notation {
+  margin-top: 2px;
+}
+
+.housingCard--horizontal .housingCard__notation {
+  margin-top: auto;
+}
+
+.fa-star {
+  margin-right: -1px;
+}
+
+.star-on {
+  color: var(--color-highlight-primary);
+}
+
+.star-off {
+  color: var(--color-neutral-primary);
+}

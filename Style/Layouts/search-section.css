@@ -1,0 +1,15 @@
+.searchSection {
+    margin: 0 var(--margin-sides-desktop) 16px;
+    height: 144px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.searchSection__title {
+    margin-bottom: 8px;
+}
+
+.searchSection__body {
+    margin-bottom: 16px;
+}

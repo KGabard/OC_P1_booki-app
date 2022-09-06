@@ -1,0 +1,24 @@
+.popularSection {
+  flex-basis: 0;
+  flex-grow: 1;
+  background-color: var(--color-neutral-secondary);
+  padding: var(--padding-housings-section-desktop);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.popularSection__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.popularSection__housingsList {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}

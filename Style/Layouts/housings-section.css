@@ -1,0 +1,13 @@
+.housingsSection {
+  background-color: var(--color-neutral-secondary);
+  flex-basis: 0;
+  flex-grow: 2.5;
+  padding: var(--padding-housings-section-desktop);
+  border-radius: 16px;
+}
+
+.housingsSection__housingsList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
