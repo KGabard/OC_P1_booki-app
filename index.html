@@ -13,7 +13,7 @@
   </head>
   <body>
     <header>
-      <img class="logo" src="Assets/Images/Logo/Booki@3x.png" alt="logo" />
+      <img class="logo" src="Assets/Images/Logo/Booki.png" alt="logo" />
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item typoBody">Hébergements</li>
@@ -30,7 +30,7 @@
         En plein centre ville ou en pleine nature
       </p>
 
-      <form action="" class="searchSection__form">
+      <form class="searchSection__form">
         <div class="searchSection__logoContainer">
           <i class="fa-solid fa-location-dot fa-lg"></i>
         </div>
@@ -75,16 +75,16 @@
       </div>
     </section>
 
-    <section class="infoSection">
+    <div class="infoSection">
       <div class="infoSection__logoContainer">
         <i class="infoSection__logo fa-solid fa-info"></i>
       </div>
       <p class="infoSection__body typoBody">
         Plus de 500 logements sont disponibles dans cette ville
       </p>
-    </section>
+    </div>
 
-    <section class="housingsSectionsContainer">
+    <div class="housingsSectionsContainer">
       <section class="housingsSection">
         <h1 class="housingsSection__title typoTitle">
           Hébergements à Marseille
@@ -333,7 +333,7 @@
           </a>
         </div>
       </section>
-    </section>
+    </div>
 
     <section class="activitiesSection">
       <h1 class="activitiesSection__title typoTitle">Activités à Marseille</h1>
@@ -350,10 +350,12 @@
                 <div class="activityCard__info">
                   <h2 class="housingCard__title typoCardTitle">Vieux Port</h2>
                 </div>
+                <div class="activityCard__overlay">
+                  <h2 class="typoTitle">Vieux Port</h2>
+                </div>
               </div>
             </a>
           </div>
-          <!-- other items here -->
         </div>
         <div class="activitiesSection__list__column">
           <div class="activitiesSection__list__item">
@@ -365,7 +367,12 @@
                   class="activityCard__picture"
                 />
                 <div class="activityCard__info">
-                  <h2 class="housingCard__title typoCardTitle">Fort de Pomègues</h2>
+                  <h2 class="housingCard__title typoCardTitle">
+                    Fort de Pomègues
+                  </h2>
+                </div>
+                <div class="activityCard__overlay">
+                  <h2 class="typoTitle">Fort de Pomègues</h2>
                 </div>
               </div>
             </a>
@@ -379,12 +386,16 @@
                   class="activityCard__picture"
                 />
                 <div class="activityCard__info">
-                  <h2 class="housingCard__title typoCardTitle">Îles du Frioul</h2>
+                  <h2 class="housingCard__title typoCardTitle">
+                    Îles du Frioul
+                  </h2>
+                </div>
+                <div class="activityCard__overlay">
+                  <h2 class="typoTitle">Îles du Frioul</h2>
                 </div>
               </div>
             </a>
           </div>
-          <!-- other items here -->
         </div>
         <div class="activitiesSection__list__column">
           <div class="activitiesSection__list__item">
@@ -396,12 +407,16 @@
                   class="activityCard__picture"
                 />
                 <div class="activityCard__info">
-                  <h2 class="housingCard__title typoCardTitle">Parc National des Calanques</h2>
+                  <h2 class="housingCard__title typoCardTitle">
+                    Parc National des Calanques
+                  </h2>
+                </div>
+                <div class="activityCard__overlay">
+                  <h2 class="typoTitle">Parc National des Calanques</h2>
                 </div>
               </div>
             </a>
           </div>
-          <!-- other items here -->
         </div>
         <div class="activitiesSection__list__column">
           <div class="activitiesSection__list__item">
@@ -413,7 +428,12 @@
                   class="activityCard__picture"
                 />
                 <div class="activityCard__info">
-                  <h2 class="housingCard__title typoCardTitle">Notre-Dame-de-la-Garde</h2>
+                  <h2 class="housingCard__title typoCardTitle">
+                    Notre-Dame-de-la-Garde
+                  </h2>
+                </div>
+                <div class="activityCard__overlay">
+                  <h2 class="typoTitle">Notre-Dame-de-la-Garde</h2>
                 </div>
               </div>
             </a>
@@ -427,14 +447,47 @@
                   class="activityCard__picture"
                 />
                 <div class="activityCard__info">
-                  <h2 class="housingCard__title typoCardTitle">Parc Longchamp</h2>
+                  <h2 class="housingCard__title typoCardTitle">
+                    Parc Longchamp
+                  </h2>
+                </div>
+                <div class="activityCard__overlay">
+                  <h2 class="typoTitle">Parc Longchamp</h2>
                 </div>
               </div>
             </a>
           </div>
-          <!-- other items here -->
         </div>
       </section>
     </section>
+
+    <footer>
+      <section class="footer__list">
+        <div class="footer__list__column">
+          <h2 class="footer__list__title typoSubtitle">A propos</h2>
+          <a href="#" class="footer__list__item typoBody"
+            >Fonctionnement du site</a
+          >
+          <a href="#" class="footer__list__item typoBody"
+            >Conditions générales de vente</a
+          >
+          <a href="#" class="footer__list__item typoBody"
+            >Données et confidentialité</a
+          >
+        </div>
+        <div class="footer__list__column">
+          <h2 class="footer__list__title typoSubtitle">Nos hébergements</h2>
+          <a href="#" class="footer__list__item typoBody">Charte qualité</a>
+          <a href="#" class="footer__list__item typoBody"
+            >Soumettre votre hôtel</a
+          >
+        </div>
+        <div class="footer__list__column">
+          <h2 class="footer__list__title typoSubtitle">Assistance</h2>
+          <a href="#" class="footer__list__item typoBody">Centre d'aide</a>
+          <a href="#" class="footer__list__item typoBody">Nous contacter</a>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>

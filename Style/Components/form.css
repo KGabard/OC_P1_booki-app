@@ -1,13 +1,13 @@
 .searchSection__form {
   display: flex;
-  height: var(--btn-height-desktop);
+  height: var(--btn-height);
   width: 424px;
 }
 
 .searchSection__logoContainer {
   background-color: var(--color-neutral-secondary);
   border-radius: 16px 0 0 16px;
-  width: var(--btn-height-desktop);
+  width: var(--btn-height);
   display: flex;
   justify-content: center;
   align-items: center;

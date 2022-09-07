@@ -6,6 +6,8 @@
   background-color: white;
   border-radius: 16px;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
 }
 
 .activityCard__link {
@@ -22,8 +24,48 @@
   height: 0;
   flex: 1 1 0px;
   border-radius: 16px 16px 0 0;
+  transition: opacity 200ms ease-in-out, filter 200ms ease-in-out;
 }
 
 .activityCard__info {
+  max-height: 150px;
+  height: fit-content;
   padding: 16px;
+  overflow: hidden;
+  transition: max-height 200ms 150ms ease-in-out, padding 200ms 150ms ease-in-out, opacity 200ms 150ms ease-in-out;
+}
+
+.activityCard__overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.activityCard__overlay h2 {
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.activityCard:hover .activityCard__info {
+  max-height: 0;
+  padding: 0;
+  opacity: 0;
+  transition: max-height 200ms ease-in-out, padding 200ms ease-in-out;
+}
+
+.activityCard:hover .activityCard__picture {
+  opacity: 0.5;
+  filter: grayscale(0.8);
+}
+
+.activityCard:hover .activityCard__overlay {
+  opacity: 1;
+  transition: opacity 200ms 150ms ease-in-out;
 }

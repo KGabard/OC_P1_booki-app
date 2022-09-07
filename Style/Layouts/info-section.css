@@ -1,5 +1,5 @@
 .infoSection {
-  height: var(--btn-height-desktop);
+  height: var(--btn-height);
   display: flex;
   margin: 0 var(--margin-sides-desktop) 32px;
   gap: 16px;

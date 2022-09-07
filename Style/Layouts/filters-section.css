@@ -1,12 +1,25 @@
 .filtersSection {
   display: flex;
-  height: 72px;
-  align-items: center;
+  padding: 16px 0;
+  align-items: top;
   gap: 32px;
   margin: 0 var(--margin-sides-desktop) 16px;
+}
+
+.filtersSection__title {
+  height: var(--btn-height);
+  display: flex;
+  align-items: center;
 }
 
 .filtersSection__filtersList {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
 }
+
+/* @media only screen and (max-width: var(--tablet-breakpoint)) {
+  .filtersSection {
+    border: 4px solid red;
+  }
+} */
