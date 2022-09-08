@@ -27,27 +27,12 @@
 }
 
 .housingCard__link.housingCard--vertical {
-  width: 92%;
+  width: 100%;
 }
 
 .housingCard__link.housingCard--horizontal {
   height: 0;
   flex-grow: 1;
-}
-
-.housingCard__container:nth-of-type(3n-2) > .housingCard__link {
-  margin-right: auto;
-}
-
-.housingCard__container:nth-of-type(3n) > .housingCard__link {
-  margin-left: auto;
-}
-
-.housingCard__container {
-  width: 33.33%;
-  display: flex;
-  justify-content: center;
-  margin-top: 32px;
 }
 
 .housingCard__picture {
@@ -123,4 +108,20 @@
 
 .star-off {
   color: var(--color-neutral-primary);
+}
+
+@media only screen and (max-width: 992px) {
+  .housingCard--vertical .housingCard__title {
+    -webkit-line-clamp: 2;
+  }
+  .housingCard--horizontal .housingCard__title {
+    -webkit-line-clamp: 5;
+    margin-bottom: 8px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .housingCard__link.housingCard--horizontal {
+    height: 144px;
+  }
 }

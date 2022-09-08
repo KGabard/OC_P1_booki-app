@@ -1,7 +1,31 @@
 header {
+  width: 100%;
+  max-width: var(--max-page-width);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 var(--margin-sides-desktop) 16px;
+  padding: 0 var(--padding-sides-desktop);
+  margin: 0 auto 16px;
   height: 104px;
+}
+
+@media only screen and (max-width: 992px) {
+  header {
+    padding-right: var(--padding-sides-tablet);
+    padding-left: var(--padding-sides-tablet);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding-right: 0;
+    padding-left: 0;
+    height: 132px;
+    margin-bottom: 24px;
+  }
+
+  header .logo {
+    margin: auto;
+  }
 }

@@ -22,3 +22,32 @@
   flex-direction: column;
   gap: 32px;
 }
+
+@media only screen and (max-width: 992px) {
+  .popularSection {
+    padding: var(--padding-housings-section-tablet);
+    gap: 24px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .popularSection {
+    margin-right: calc(var(--padding-sides-mobile) * -1);
+    margin-left: calc(var(--padding-sides-mobile) * -1);
+    padding: 40px var(--padding-sides-mobile);
+    border-radius: 0;
+    gap: 24px;
+  }
+
+  .popularSection__header {
+    width: 100%;
+    max-width: var(--max-housings-section-width-mobile);
+    margin: auto;
+  }
+
+  .popularSection__housingsList {
+    width: 100%;
+    max-width: var(--max-housings-section-width-mobile);
+    margin: auto;
+  }
+}

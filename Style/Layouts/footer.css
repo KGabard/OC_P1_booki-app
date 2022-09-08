@@ -1,6 +1,6 @@
 footer {
   background-color: var(--color-neutral-secondary);
-  padding: 48px var(--margin-sides-desktop);
+  padding: 48px var(--padding-sides-desktop);
 }
 
 .footer__list {
@@ -13,13 +13,40 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding-right: 16px;
 }
 
 .footer__list__title {
-    margin-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .footer__list__item {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (max-width: 992px) {
+  footer {
+    padding-right: var(--padding-sides-tablet);
+    padding-left: var(--padding-sides-tablet);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    padding-right: var(--padding-sides-mobile);
+    padding-left: var(--padding-sides-mobile);
+  }
+
+  .footer__list {
+    flex-direction: column;
+    gap: 48px;
+    width: 100%;
+    max-width: var(--max-housings-section-width-mobile);
+    margin: auto;
+  }
+
+  .footer__list__column {
+    width: 100%;
+  }
 }

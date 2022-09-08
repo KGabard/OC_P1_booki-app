@@ -1,5 +1,19 @@
 .housingsSectionsContainer {
-    display: flex;
-    margin: 0 var(--margin-sides-desktop) 64px;
+  display: flex;
+  margin-bottom: 64px;
+  gap: 40px;
+}
+
+@media only screen and (max-width: 992px) {
+  .housingsSectionsContainer {
+    gap: 32px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .housingsSectionsContainer {
+    flex-direction: column-reverse;
     gap: 40px;
+    margin-bottom: 56px;
+  }
 }

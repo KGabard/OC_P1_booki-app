@@ -27,3 +27,35 @@
   width: 136px;
   cursor: pointer;
 }
+
+.searchSection__submitBtn i {
+  display: none;
+}
+
+.searchSection__submitBtn span {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .searchSection__form {
+    width: 100%;
+  }
+
+  .searchSection__submitBtn {
+    width: var(--btn-height);
+  }
+
+  .searchSection__textInput {
+    width: 0;
+    max-width: 300px;
+    flex: 1 1 0px;
+  }
+
+  .searchSection__submitBtn i {
+    display: block;
+  }
+
+  .searchSection__submitBtn span {
+    display: none;
+  }
+}

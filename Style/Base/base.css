@@ -8,12 +8,15 @@
   --color-highlight-primary: #0065fc;
   --color-highlight-secondary: #deebff;
 
-  --margin-sides-desktop: 64px;
-  --margin-sides-tablet: 32px;
-  --margin-sides-mobile: 16px;
-
+  --max-page-width: 1440px;
+  
+  --padding-sides-desktop: 64px;
+  --padding-sides-tablet: 32px;
+  --padding-sides-mobile: 16px;
+  
   --padding-housings-section-desktop: 40px;
   --padding-housings-section-tablet: 24px;
+  --max-housings-section-width-mobile: 368px;
 
   --btn-height: 48px;
 }
@@ -30,7 +33,13 @@ body {
   font-family: 'Raleway', sans-serif;
   display: flex;
   flex-direction: column;
+}
+
+main {
+  width: 100%;
+  max-width: var(--max-page-width);
   margin: auto;
+  padding: 0 var(--padding-sides-desktop);
 }
 
 .typoTitle {
@@ -56,4 +65,18 @@ body {
 .typoCardBody {
   font-size: 14px;
   font-weight: normal;
+}
+
+@media only screen and (max-width: 992px) {
+  main {
+    padding-right: var(--padding-sides-tablet);
+    padding-left: var(--padding-sides-tablet);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    padding-right: var(--padding-sides-mobile);
+    padding-left: var(--padding-sides-mobile);
+  }
 }
