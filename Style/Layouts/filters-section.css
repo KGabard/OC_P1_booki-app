@@ -1,7 +1,6 @@
 .filtersSection {
   display: flex;
   padding: 16px 0;
-  align-items: top;
   gap: 32px;
   margin-bottom: 16px;
 }
