@@ -11,13 +11,14 @@
 .nav__item {
   width: 162px;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
 }
 
 .nav__item a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: inherit;
 }
