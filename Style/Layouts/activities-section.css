@@ -13,6 +13,8 @@
   flex-direction: column;
   flex-wrap: wrap;
   row-gap: 16px;
+  align-items: center;
+  transform: scaleX(1.017);
 }
 
 .activitiesSection__list__item {
@@ -55,7 +57,6 @@
   }
 
   .activitiesSection__list__item:nth-of-type(n) {
-    flex: 1 1 0px;
     width: 30%;
   }
 
@@ -80,7 +81,7 @@
 
   .activitiesSection__list {
     height: fit-content;
-
+    transform: scaleX(1.017);
   }
 
   .activitiesSection__list__break:nth-of-type(n) {
