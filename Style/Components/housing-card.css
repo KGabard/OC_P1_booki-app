@@ -110,7 +110,7 @@
   color: var(--color-neutral-primary);
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .housingCard--vertical .housingCard__title {
     -webkit-line-clamp: 2;
   }
@@ -120,7 +120,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .housingCard__link.housingCard--horizontal {
     height: 144px;
   }

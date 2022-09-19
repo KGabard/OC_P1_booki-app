@@ -51,7 +51,7 @@
   width: 100%;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .housingsSection {
     padding: var(--padding-housings-section-tablet);
     flex-grow: 2;
@@ -73,7 +73,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .housingsSection {
     padding: 0;
     gap: 24px;

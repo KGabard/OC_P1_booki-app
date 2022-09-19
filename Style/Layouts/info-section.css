@@ -21,7 +21,7 @@
   color: var(--color-highlight-primary);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .infoSection {
     gap: 8px;
     align-items: initial;

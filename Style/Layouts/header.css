@@ -9,14 +9,14 @@ header {
   height: 104px;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   header {
     padding-right: var(--padding-sides-tablet);
     padding-left: var(--padding-sides-tablet);
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   header {
     flex-direction: column;
     padding-right: 0;

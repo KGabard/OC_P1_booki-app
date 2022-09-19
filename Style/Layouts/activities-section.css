@@ -43,7 +43,7 @@
   flex: 0.91 1 0px;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .activitiesSection {
     height: 700px;
   }
@@ -69,7 +69,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .activitiesSection {
     height: fit-content;
     margin-bottom: 48px;

@@ -9,11 +9,11 @@
   --color-highlight-secondary: #deebff;
 
   --max-page-width: 1440px;
-  
+
   --padding-sides-desktop: 64px;
   --padding-sides-tablet: 32px;
   --padding-sides-mobile: 16px;
-  
+
   --padding-housings-section-desktop: 40px;
   --padding-housings-section-tablet: 24px;
   --max-housings-section-width-mobile: 368px;
@@ -67,14 +67,14 @@ main {
   font-weight: normal;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   main {
     padding-right: var(--padding-sides-tablet);
     padding-left: var(--padding-sides-tablet);
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   main {
     padding-right: var(--padding-sides-mobile);
     padding-left: var(--padding-sides-mobile);
